@@ -1,0 +1,56 @@
+.container {
+    margin-top: 40px;
+    padding: 20px;
+	background-color: white;
+	border: 2px solid black;
+	max-width: 1000px;
+	border-radius: 25px;
+}
+
+.head_left{
+	float: left;
+}
+
+.head_right{
+	float: right;
+}
+
+.remove{
+	color: red;
+}
+
+.done-true {
+	text-decoration: line-through;
+	color: grey;
+}
+
+body{
+	background-size: cover;
+}
+
+h2{
+	color: grey;
+	text-shadow: 5px 5px 10px lightgrey;
+}
+
+thead{
+	font-size: 15px;
+}
+
+select{
+	max-width: 80px;
+	height: auto;
+}
+
+th:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+input {
+	max-width: 150px;
+	text-align: right;
+	cursor: pointer;
+
+}
+
