@@ -1,5 +1,4 @@
-window.onload() = function {
-  angular.module('myApp', ['popUpWindow'])
+angular.module('myApp', ['popUpWindow'])
   .controller('mainCtrl', function($scope){
     $scope.tasks = [
      {date: "2016-05-10", description: 'Apply for SoftServe course', done: 'true'},
@@ -58,5 +57,4 @@ angular.module('popUpWindow', [])
       scope: {tesT: 'bind'} ,
       templateUrl: 'forms/form.html'
     }
-  });  
-};
+});  
