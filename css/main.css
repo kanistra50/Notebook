@@ -1,10 +1,10 @@
 .container {
     margin-top: 40px;
     padding: 20px;
-	background-color: white;
-	border: 2px solid black;
-	max-width: 1000px;
-	border-radius: 25px;
+    background-color: white;
+    border: 2px solid black;
+    max-width: 1000px;
+    border-radius: 25px;
 }
 
 .head_left{
@@ -51,6 +51,5 @@ input {
 	max-width: 150px;
 	text-align: right;
 	cursor: pointer;
-
 }
 
