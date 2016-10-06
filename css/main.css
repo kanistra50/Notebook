@@ -25,6 +25,7 @@
 }
 
 body{
+	background-image: url("../backG.png");
 	background-size: cover;
 }
 
