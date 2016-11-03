@@ -1,6 +1,6 @@
 angular.module('myApp', ['popUpWindow'] )
-  .controller('mainCtrl', function($scope) {
-  
+    .controller('mainCtrl', function($scope) {
+        
         $scope.tasks = [
             {date: "2016-05-10", description: 'Apply for SoftServe course', done: 'true'},
             {date: "2016-05-22", description: 'Visiting EPAM conference', done: 'false'},
@@ -59,14 +59,14 @@ angular.module('myApp', ['popUpWindow'] )
           return value
         };
 
-});
+    })
 
 
-    angular.module('popUpWindow', [])
+    .angular.module('popUpWindow', [])
       .directive('newForm', function () {
-        return {
-          restrict: 'E',
-          scope: {tesT: 'bind'} ,
-          templateUrl: 'forms/form.html'
-        }
-});  
+          return {
+            restrict: 'E',
+            scope: {tesT: 'bind'} ,
+            templateUrl: 'forms/form.html'
+          }
+    });  
