@@ -15,47 +15,46 @@
 </head>
 
 <body ng-controller='mainCtrl'>
-  <div class='container'>
-     <h2>NoteBook</h2><br>
-     <new-form name = "tesT"></new-form>
-     <div class='head_left'>
-        <form ng-submit='addTask()'>
-        <span><input type="text" placeholder='...new Date' ng-model='new.date'></span>
-        <span><input type="text" placeholder='...new Task' ng-model='new.description'></span>
-        <input class="btn btn-primary" type="submit" value="Add new task">
-        </form>
-      </div>
-      <div class='head_right'>
-          <span>Events on the page: <select  ng-model="limitValue" ng-options="task for task in limitRange"></select></span>
-      </div>
-      <div class='content'>    
-     
-      <table class="table table-hover" id="grid"> 
-           <thead>
-                <tr>
-                    <th data-type="num">#</th>
-                    <th data-type="taskDate">Task Date</th>
-                    <th data-type="description" ng-click="sorterTask">Task Desctiption</a></th>
-                    <th data-type="reminder">Done</th>
-                    <th >Remove</th>
-                </tr>
-            </thead>
-            <tbody class="table table-striped" >
-                <tr ng-repeat='task in tasks | limitTo:limitValue'>
-                    <td>{{tasks.indexOf(task)+1}}</td>
-                    <td>{{task.date}}</td>
-                    <td><span class="done-{{task.done}}">{{task.description}}</span></td>
-                    <td>
-                        <form action="demo_form.asp">
-                          <input class="checkbox-inline" type="checkbox" ng-model='task.done'>
-                        </form>
-                    </td>
-                    <td><button class="remove" ng-click="removeTask(task)">x</button></td>
-                </tr>
-            </tbody>
-        </table>
-        <hr> 
-      </div>
-  </div>   
+    <div class='container'>
+        <h2>NoteBook</h2><br>
+        <new-form name = "tesT"></new-form>
+        <div class='head_left'>
+            <form ng-submit='addTask()'>
+            <span><input type="text" placeholder='...new Date' ng-model='new.date'></span>
+            <span><input type="text" placeholder='...new Task' ng-model='new.description'></span>
+            <input class="btn btn-primary" type="submit" value="Add new task">
+            </form>
+        </div>
+        <div class='head_right'>
+            <span>Events on the page: <select  ng-model="limitValue" ng-options="task for task in limitRange"></select></span>
+        </div>
+        <div class='content'>    
+            <table class="table table-hover" id="grid"> 
+                <thead>
+                    <tr>
+                        <th data-type="num">#</th>
+                        <th data-type="taskDate">Task Date</th>
+                        <th data-type="description" ng-click="sorterTask">Task Desctiption</a></th>
+                        <th data-type="reminder">Done</th>
+                        <th >Remove</th>
+                    </tr>
+                </thead>
+                <tbody class="table table-striped" >
+                    <tr ng-repeat='task in tasks | limitTo:limitValue'>
+                        <td>{{tasks.indexOf(task)+1}}</td>
+                        <td>{{task.date}}</td>
+                        <td><span class="done-{{task.done}}">{{task.description}}</span></td>
+                        <td>
+                            <form action="demo_form.asp">
+                                <input class="checkbox-inline" type="checkbox" ng-model='task.done'>
+                            </form>
+                        </td>
+                        <td><button class="remove" ng-click="removeTask(task)">x</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr> 
+        </div>
+    </div>   
 </body>
 </html>
