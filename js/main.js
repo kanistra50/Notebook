@@ -25,9 +25,9 @@ angular.module('myApp', ['popUpWindow'] )
             $scope.new.description = '';
         };
 
-        $scope.getDaysLeft = function (task) {
+        /*$scope.getDaysLeft = function (task) {
           
-            var curNum = this.$index;
+            var curNum = this.$scope.index;
             var now = new Date();
             var daysNum = now.getDate();
             var curMonth = now.getMonth()+1; 
@@ -49,7 +49,7 @@ angular.module('myApp', ['popUpWindow'] )
                   $scope.tasks[curNum].dLeft = "Done"; 
             };
             //console.log($scope.task);
-        }; 
+        }; */
 
         $scope.removeTask = function (task) {
             $scope.tasks.splice($scope.tasks.indexOf(task), 1);
