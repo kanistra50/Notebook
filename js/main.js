@@ -59,10 +59,10 @@ angular.module('myApp', ['popUpWindow'] )
           return value
         };
 
-    })
+    });
 
 
-    .angular.module('popUpWindow', [])
+    angular.module('popUpWindow', [])
       .directive('newForm', function () {
           return {
             restrict: 'E',
