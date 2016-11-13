@@ -1,6 +1,6 @@
-[See demo](https://kanistra50.github.io/notebook/)
+[See demo](https://kanistra50.github.io/notes_list/)
 
-# notebook
+# Notes List
 SPA, AngularJS, Bootstrap
 
 
