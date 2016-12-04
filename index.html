@@ -41,7 +41,7 @@
                 </thead>
                 <tbody class="table table-striped" >
                     <tr ng-repeat='task in tasks | limitTo:limitValue'>
-                        <td>{{tasks.indexOf(task)+1}}</td>
+                        <td>{{$index+1}}</td>
                         <td>{{task.date}}</td>
                         <td><span class="done-{{task.done}}">{{task.description}}</span></td>
                         <td>
