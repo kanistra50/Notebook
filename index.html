@@ -20,7 +20,7 @@
         <new-form name = "tesT"></new-form>
         <div class='head_left'>
             <form ng-submit='addTask()'>
-            <span><input type="text" placeholder='...new Date' ng-model='new.date'></span>
+            <span><input  type="text" placeholder='...new Date' ng-model='new.date'></span>
             <span><input type="text" placeholder='...new Task' ng-model='new.description'></span>
             <input class="btn btn-primary" type="submit" value="Add new task">
             </form>
@@ -41,9 +41,9 @@
                 </thead>
                 <tbody class="table table-striped" >
                     <tr ng-repeat='task in tasks | limitTo:limitValue'>
-                        <td>{{$index+1}}</td>
-                        <td>{{task.date}}</td>
-                        <td><span class="done-{{task.done}}">{{task.description}}</span></td>
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="task.date"></td>
+                        <td><span class="done-{{task.done}}" ng-bind="task.description"></span></td>
                         <td>
                             <form action="demo_form.asp">
                                 <input class="checkbox-inline" type="checkbox" ng-model='task.done'>
