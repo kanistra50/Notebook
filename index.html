@@ -45,9 +45,9 @@
                         <td ng-bind="task.date"></td>
                         <td><span class="done-{{task.done}}" ng-bind="task.description"></span></td>
                         <td>
-                           
-                                <input class="checkbox-inline" type="checkbox" ng-model='task.done'>
-                        
+                            <form action="demo_form.asp">
+                                <input class="checkbox-inline" type="checkbox" ng-model='task.done' />
+                            </form>
                         </td>
                         <td><button class="remove" ng-click="removeTask(task)">x</button></td>
                     </tr>
