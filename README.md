@@ -1,6 +1,6 @@
-[See demo](https://kanistra50.github.io/notes_list/)
+[See demo](https://kanistra50.github.io/zoomdata/)
 
-# Notes List
-SPA, AngularJS, Bootstrap
+# Zoomdata Project
+HTML, Bootstrap
 
 
